@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
 .policy-page {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,12 +18,19 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #EC4998;
     width: 100%;
+    font-family: 'Outfit', sans-serif;
+    pre{
+      font-family: 'Outfit', sans-serif;
+    }
+
   }
   
   .policy-container h1 {
     text-align: center;
     color: #333;
     font-size: 2rem;
+    font-family: 'Outfit', sans-serif;
+
   }
   
   .last-updated {

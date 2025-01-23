@@ -29,9 +29,9 @@ const cards = [
 ]
 
 const footeerItems = [
-  { text: 'Terms of Service' , linkTo:'/terms'},
-  { text: 'Privacy Policy' , linkTo:'/policy'},
-  { text: 'Support' , href:'mailto:support@memes.gg'},
+  { text: 'Terms of Service', linkTo: '/terms' },
+  { text: 'Privacy Policy', linkTo: '/policy' },
+  { text: 'Support', href: 'mailto:support@memes.gg' },
   { image: footerImage }
 ]
 
@@ -43,7 +43,7 @@ function Home() {
       <div className='headerDesktop'>
         <div className='leftCol'>
           <div className='icons'>
-            <img src={icon} alt="memesicon1"  className='memesicon1'/>
+            <img src={icon} alt="memesicon1" className='memesicon1' />
             <img src={memes} alt="" className='memesIcon' />
           </div>
           <div>
@@ -52,8 +52,9 @@ function Home() {
           <p className='headerText'><span className='beTheFirst'>Be the first </span>to trending memecoins</p>
           <p className='subtitle'>Join the platform built for meme traders: fast, easy, and always ahead of the curve.</p>
           <div className='appStore'>
-            <img src={appStore} alt="" />
-          </div>
+            <a href="https://apps.apple.com/app/id6475736639" target="_blank" rel="noopener noreferrer">
+              <img src={appStore} alt="App Store" />
+            </a>          </div>
         </div>
         <div className='rihgtCol'>
           <img src={banner} alt="" className='bannerImageDesktop' />

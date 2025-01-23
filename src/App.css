@@ -61,7 +61,23 @@ a {
 
 .memesIcon {
   padding-bottom: 30px;
-  height: 50px;
+  height: 61px;
+  font-family: 'Outfit', sans-serif;
+font-size: 14px;
+font-weight: 500;
+line-height: 17.64px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FFFFFFCC;
+letter-spacing: -.025em;
+font-weight: 700;
+font-size: 3.75rem;;
+@media screen and (max-width: 767px) {
+  font-size: 3rem;;
+
+  
+}
 }
 
 .memesicon1 {

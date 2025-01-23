@@ -4,7 +4,7 @@ import './App.css'
 import memes from './assets/Memes.gg.svg'
 import icon from './assets/icon.svg'
 import appStore from './assets/appstore.svg'
-import banner from './assets/banner.svg'
+import banner from './assets/phone.png'
 import creditCard from './assets/CreditCard.svg'
 import sparkle from './assets/Sparkle.svg'
 import ClockClockwise from './assets/ClockClockwise.svg'
@@ -43,7 +43,7 @@ function Home() {
       <div className='headerDesktop'>
         <div className='leftCol'>
           <div className='icons'>
-            <img src={icon} alt="" />
+            <img src={icon} alt="memesicon1"  className='memesicon1'/>
             <img src={memes} alt="" className='memesIcon' />
           </div>
           <div>
@@ -80,7 +80,7 @@ function Home() {
               </div>
             ))}
           </div>
-          <img src={footerImage} alt="" />
+          <img src={footerImage} alt="" className='desktopFooterImage' />
         </div>
       </div>
     </div>

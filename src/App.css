@@ -179,8 +179,7 @@ a {
 }
 
 .card {
-  position: relative;
-  border-radius: 12.41px;
+
   /* Rounded corners */
   padding: 25px;
   /* Inner padding */
@@ -189,13 +188,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  
+  --border-width: 2px;
+  
 
-  /* Background */
-  background: linear-gradient(112.47deg, rgba(171, 255, 119, 0.2) 0%, rgba(171, 255, 119, 0.06) 100%);
-  z-index: 1;
-  overflow: hidden;
-  /* Ensures no overflow from pseudo-element */
-  border: 2px solid #FFFFFF33;
+
+  border-radius: 13px;
+  border: 2px;
+  /* color: white; */
+  /* padding: calc(0.5rem + var(--border-width)) calc(0.5rem + var(--border-width)); */
+  position: relative;
+  background: linear-gradient(112.47deg, rgba(171, 255, 119, 0.09) 0%, rgba(142, 157, 132, 0.06) 100%);
 
   @media screen and (min-width: 767px) {
     gap: 15px;
@@ -295,4 +298,16 @@ a {
     }
 
   }
+}
+
+.card::before {  
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  border-radius: inherit;
+  border: solid var(--border-width) transparent;
+  background: linear-gradient(112.47deg, rgba(171, 255, 119, 0.301) 0%, rgba(171, 255, 119, 0.06) 100%) border-box;
+  mask: linear-gradient(white, white) border-box, linear-gradient(white, white) padding-box;
+  mask-composite: exclude;
 }

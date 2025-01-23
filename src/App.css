@@ -61,23 +61,7 @@ a {
 
 .memesIcon {
   padding-bottom: 30px;
-  height: 61px;
-  font-family: 'Outfit', sans-serif;
-font-size: 14px;
-font-weight: 500;
-line-height: 17.64px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #FFFFFFCC;
-letter-spacing: -.025em;
-font-weight: 700;
-font-size: 3.75rem;;
-@media screen and (max-width: 767px) {
-  font-size: 3rem;;
-
-  
-}
+  height: 50px;
 }
 
 .memesicon1 {
@@ -171,11 +155,11 @@ font-size: 3.75rem;;
 .appStore {
   display: flex;
   justify-content: center;
-  width: 100%;
+  padding-top: 5px;
 
   img {
-    height: 40px;
-    width: 120px;
+    height: 60px;
+    width: 180px;
   }
 
   @media screen and (min-width: 767px) {

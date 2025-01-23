@@ -44,8 +44,7 @@ function Home() {
         <div className='leftCol'>
           <div className='icons'>
             <img src={icon} alt="memesicon1"  className='memesicon1'/>
-            {/* <img src={memes} alt="" className='memesIcon' /> */}
-            <p className='memesIcon' >Memes.gg</p>
+            <img src={memes} alt="" className='memesIcon' />
           </div>
           <div>
             <img src={banner} alt="" className='bannerImage' />

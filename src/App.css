@@ -169,7 +169,7 @@ a {
   padding: 25px;
   padding-top: 0;
   @media screen and (max-width: 767px) {
-    padding-bottom: 13px;
+    padding-bottom: 25px;
     
   }
 

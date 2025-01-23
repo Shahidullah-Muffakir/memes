@@ -9,6 +9,9 @@ function App() {
   return (
     <Router>
       <div className='app'>
+        <div className="mainContainer">
+
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/policy" element={<Policy />} /> {/* The route for Policy page */}
@@ -16,6 +19,7 @@ function App() {
         </Routes>
 
         {/* <Footer /> Include the Footer */}
+        </div>
       </div>
     </Router>
   );

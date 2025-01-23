@@ -22,7 +22,7 @@ a {
   /* Ensures layout consistency */
   align-items: center;
   padding-top: 25px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 
   @media screen and (min-width: 767px) {
     padding-left: 65px;
@@ -31,6 +31,9 @@ a {
   }
 
 }
+/* .mainContainer{
+  max-width: 920px;
+} */
 
 .icons {
   display: flex;
@@ -70,6 +73,10 @@ a {
     display: none;
 
   }
+}
+.bannerImageDesktop{
+    width: 575px;
+
 }
 
 .bannerImageDesktop,
@@ -173,6 +180,8 @@ a {
     gap: 30px;
     justify-content: flex-start;
     padding-left: 25px;
+    padding-top: 50px;
+
 
   }
 

@@ -31,9 +31,13 @@ a {
   }
 
 }
-/* .mainContainer{
-  max-width: 920px;
-} */
+.mainContainer{
+  @media screen and (min-width: 767px) {
+ 
+    
+    min-width: 90%;
+  }
+}
 
 .icons {
   display: flex;
@@ -68,7 +72,12 @@ a {
   height: 320px;
   /* min-width: 382px; */
   padding: 10px;
+  @media screen and (max-width: 767px) {
+      min-width: 382px;
+      margin-top: -34px;
 
+    
+  }
   @media screen and (min-width: 767px) {
     display: none;
 

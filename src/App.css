@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+a {
+  text-decoration: none; /* Removes the underline */
+  color: inherit; /* Makes the link color inherit from the parent (or you can set a custom color) */
+}
+.app {
+  /* height: 100vh; */
+  min-height: 100vh;
+  /* Ensure the gradient covers the viewport height */
+  width: 100vw;
+  /* Full width */
+  background: linear-gradient(111.34deg, #FB923C 0%, #EC4899 50%, #9333EA 100%);
+  background-attachment: fixed;
+  /* Make the gradient stay fixed during scrolling */
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  /* Ensures layout consistency */
+  align-items: center;
+  padding-top: 25px;
+  max-width: 1440px;
+
+  @media screen and (min-width: 767px) {
+    padding-left: 110px;
+    padding-right: 78px;
+    padding-top: 10px;
+  }
+
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+
+  @media screen and (min-width: 767px) {
+    transform: translate(0, 41px);
+    justify-content: flex-start;
+    padding-left: 15px;
+
+  }
+}
+
+.memesIcon {
+  padding-bottom: 30px;
+}
+
+.bannerImage {
+  height: 320px;
+  /* min-width: 382px; */
+  padding: 10px;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+
+  }
+}
+
+.headerDesktop {
+  @media screen and (min-width: 767px) {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 970px;
+  }
+}
+
+.headerText {
+
+
+  padding: 25px;
+
+  font-family: 'Outfit', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: white;
+
+  span {
+    color: rgb(192, 255, 153);
+    display: block
+  }
+
+}
+.leftCol{
+  margin-left: 50px;
+}
+.subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.64px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFFCC;
+  padding: 25px;
+  padding-top: 0;
+
+}
+
+.appStore {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 767px) {
+    justify-content: flex-start;
+    padding-left: 25px;
+
+  }
+}
+
+.cards {
+  padding: 25px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16.38px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #FFFFFFCC;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(111.34deg, #FB923C 0%, #EC4899 50%, #9333EA 100%); */
+  @media screen and (min-width: 767px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start;
+    padding-left: 25px;
+
+  }
+
+}
+
+.card {
+  position: relative;
+  border-radius: 12.41px;
+  /* Rounded corners */
+  padding: 25px;
+  /* Inner padding */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  /* Background */
+  background: linear-gradient(112.47deg, rgba(171, 255, 119, 0.2) 0%, rgba(171, 255, 119, 0.06) 100%);
+  z-index: 1;
+  overflow: hidden;
+  /* Ensures no overflow from pseudo-element */
+  border: 2px solid #FFFFFF33;
+
+  @media screen and (min-width: 767px) {
+    gap: 15px;
+    max-width: 260px;
+
+  }
+
+  /* Border color */
+  /* Content Styles */
+  p {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16.38px;
+    text-align: left;
+  }
+
+  .cardHeader {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    @media screen and (min-width: 767px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 5px;
+
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 25.2px;
+      text-align: left;
+    }
+  }
+}
+
+.footer {
+  font-family: 'Outfit', sans-serif;
+  padding: 25px;
+
+
+  @media screen and (min-width: 767px) {
+    max-width: 890px;
+    
+  }
+  .footerText {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15.12px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF99;
+
+
+  }
+.footerContainer{
+  @media screen and (min-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+   
+  }
+}
+  .footerItems {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    padding-top: 25px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15.12px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+    @media screen and (min-width: 767px) {
+      justify-content: flex-start;
+      
+    }
+    img{
+      @media screen and (min-width: 767px) {
+        display: none;
+        
+      }
+    }
+
+  }
+}

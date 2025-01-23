@@ -39,7 +39,7 @@ function Home() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="app">
+    <div className="app home">
       <div className='headerDesktop'>
         <div className='leftCol'>
           <div className='icons'>

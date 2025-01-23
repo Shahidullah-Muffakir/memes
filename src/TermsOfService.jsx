@@ -12,11 +12,14 @@ const TermsTextViewer = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Terms and Conditions</h2>
+    <div className='policy-container'>
+      <h1>Terms and Conditions</h1>
+
       <pre
         style={{
-          maxWidth: '800px',  // Limit width
+       // Limit width
+       fontSize:'16px',
+       padding: '8vw',
           wordWrap: 'break-word',  // Ensure text breaks and wraps
           whiteSpace: 'pre-wrap',  // Preserve spaces and line breaks but allow wrapping
           overflowWrap: 'break-word',  // Ensure long words break when necessary

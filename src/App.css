@@ -13,17 +13,27 @@ a {
   /* Ensure the gradient covers the viewport height */
   width: 100vw;
   /* Full width */
-  background: linear-gradient(111.34deg, #FB923C 0%, #EC4899 50%, #9333EA 100%);
+  /* background: linear-gradient(111.34deg, #FB923C 0%, #EC4899 50%, #9333EA 100%); */
   background-attachment: fixed;
   /* Make the gradient stay fixed during scrolling */
-  padding-top: 25px;
+  /* padding-top: 25px; */
   display: flex;
   flex-direction: column;
   /* Ensures layout consistency */
   align-items: center;
-  padding-top: 25px;
+  /* padding-top: 25px; */
   /* max-width: 1440px; */
 
+  /* @media screen and (min-width: 767px) {
+    padding-left: 65px;
+    padding-right: 78px;
+    padding-top: 10px;
+  } */
+
+}
+.home{
+  background: linear-gradient(111.34deg, #FB923C 0%, #EC4899 50%, #9333EA 100%);
+  padding-top: 25px;
   @media screen and (min-width: 767px) {
     padding-left: 65px;
     padding-right: 78px;
@@ -31,10 +41,10 @@ a {
   }
 
 }
-.mainContainer{
+.mainContainer {
   @media screen and (min-width: 767px) {
- 
-    
+
+
     min-width: 90%;
   }
 }
@@ -72,19 +82,22 @@ a {
   height: 320px;
   /* min-width: 382px; */
   padding: 10px;
-  @media screen and (max-width: 767px) {
-      min-width: 382px;
-      margin-top: -34px;
 
-    
+  @media screen and (max-width: 767px) {
+    min-width: 382px;
+    margin-top: -34px;
+
+
   }
+
   @media screen and (min-width: 767px) {
     display: none;
 
   }
 }
-.bannerImageDesktop{
-    width: 575px;
+
+.bannerImageDesktop {
+  width: 575px;
 
 }
 
@@ -123,6 +136,11 @@ a {
   text-decoration-skip-ink: none;
   color: white;
 
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+
+  }
+
   span {
     color: rgb(192, 255, 153);
     display: block
@@ -156,10 +174,20 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 5px;
+  @media screen and (max-width: 767px) {
+    padding-top: 0px;
+    
+  }
 
   img {
     height: 60px;
     width: 180px;
+
+    @media screen and (max-width: 767px) {
+      height: 52px;
+      width: 170px;
+
+    }
   }
 
   @media screen and (min-width: 767px) {
@@ -206,9 +234,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  
+
   --border-width: 2px;
-  
+
 
 
   border-radius: 13px;
@@ -318,7 +346,7 @@ a {
   }
 }
 
-.card::before {  
+.card::before {
   content: '';
   position: absolute;
   inset: 0;
